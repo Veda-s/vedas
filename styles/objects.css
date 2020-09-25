@@ -54,16 +54,19 @@
 }
 .newsletter-card{
     height: 300px;
-    
     max-width: 315px;
     overflow: hidden;
-    
     background-color: #ffffff;
-    margin: 2rem auto;
-    /*   min-height: 200px;
-    max-height: 315px; */
+    margin: 0 auto;
+    /*min-height: 200px;
+    max-height: 315px;
+    */color: #000;
     border-radius: 5px;
-    color: #000;
+    transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+    -moz-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    -o-transform: translateY(-30%);
 }
 .newsletter-card-btn{
     background-color: #212529;

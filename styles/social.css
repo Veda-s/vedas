@@ -1,13 +1,4 @@
-body {
-	margin: 0;
-	padding: 0;
-	background: #ccc;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-  }
-  
+
   @media (max-width: 600px) {
 	.social-list {
 	  transform: scale(0.6);
@@ -30,11 +21,12 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	text-align: center;
 	display: flex;
   }
   
   .social-list li {
-	margin: 0 auto;
+	margin: 0 4px;
   }
   
   .social-list li a .fa {
