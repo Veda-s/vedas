@@ -90,7 +90,7 @@ body.offcanvas-active{
 }
 .offcanvas-header{ display:none; }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .offcanvas-header{ display:block; }
   .navbar-collapse {
     position: fixed;
@@ -109,7 +109,7 @@ body.offcanvas-active{
     visibility: visible;
     transform: translateX(-100%);
   }
-}
+} */
 @media all and (min-width:991px) {  
 .dropdown:after{
 content: ''; 
