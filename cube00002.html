@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg) rotateY(30deg);
+            /* animation: updown 3s linear 3s infinite alternate; */
+            animation: updown 10s ease-in-out 3s infinite alternate;
+        }
+
+        @keyframes updown {
+            0% {
+                transform: rotateX(-30deg) rotateY(30deg);
+            }
+
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box li {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #fff;
+            box-sizing: border-box;
+            float: left;
+            position: relative;
+        }
+
+        .box>div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            
+        }
+
+        .box .front {
+            /*background-color: deeppink;*/
+            transform: translateZ(150px);
+        }
+
+        .box .behind {
+            /*background-color: yellow;*/
+            transform: translateZ(-150px);
+        }
+
+        .box .left {
+            /*background-color: greenyellow;*/
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+
+        .box .right {
+            /*background-color: red;*/
+            transform: rotateY(90deg) translateZ(150px);
+        }
+
+        .box .top {
+            /*background-color: deepskyblue;*/
+            transform: rotateX(90deg) translateZ(150px);
+        }
+
+        .box .bottom {
+            /*background-color: purple;*/
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+    </style>
+
+</head>
+
+<body>
+<!--https://programmersought.com/article/92791526474/-->
+    <div class="box">
+        <div class="front"></div>
+        <div class="behind"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+    <script>
+        var box = $(".box");
+        var divs = box.children();
+        var lisColor = ['deeppink', 'yellow', 'greenyellow', 'red', 'deepskyblue', 'purple']
+        divs.each(function (index, el) {
+            var ul = $("<ul></ul>");
+            for (var i = 0; i < 9; i++) {
+                var li = $("<li></li>");
+                li.css({
+                    "backgroundColor": lisColor[index]
+                });
+                ul.append(li);
+            }
+            $(el).append(ul);
+        });
+
+        var lisPosition = [];
+        for (var i = 0; i < 54; i++) {
+            lisPosition.push(parseInt(Math.random() * 350));
+        }
+        $('li').each(function (index, el) {
+            $(el).css({
+                'left': lisPosition[index],
+                "top": lisPosition[index]
+            });
+        })
+        $('li').each(function (index, el) {
+            $(el).animate({
+                'left': 0,
+                "top": 0
+            }, 3000);
+        })
+    </script>
+
+</body>
+
+</html>

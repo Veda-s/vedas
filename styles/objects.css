@@ -18,13 +18,25 @@
 
 .content-card{
     width: 90%;
+    min-height: 350px;
     border-radius: 5px;
     margin: 2rem auto;
-   
+   padding: 0 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+
+}
+.content-card h2{
+    font-size: 32px;
+    margin: 0 auto;
+}
+.content-card ul{
+    font-size: 26px;
+}
+.content-card li{
+    padding: 8px;
 }
 
 .notification-card{

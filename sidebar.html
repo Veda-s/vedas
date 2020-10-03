@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Academy</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Local -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/objects.css">
+<style>
+    html{
+        height: 100%;
+    }
+    .sidebar{
+        position: relative;
+        background-color: coral;
+        display: block;
+        height: 100%;
+        width: 250px;
+        left: -230px;
+        transition: all .2s ease-in ;
+        z-index: 999;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        margin-top: 40px;
+    }
+    .sidebar:hover{
+        left:0;
+    }
+
+    .sidebar > ul{
+        list-style: none;
+        padding: 0                                                                              ;
+        text-align: center;
+    }
+    .sidebar > ul li{
+        
+        color: aliceblue;
+        padding: 8px;
+        transition: all .2s ease-in ;
+    }
+    .sidebar > ul li:hover{
+        background-color: aliceblue;
+        color:coral;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md">
+
+            </div>
+            <div class="col-md">
+                
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="sidebar">
+        <ul>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+        </ul>
+    </div>
+
+    <div style="height: 1000px;"></div>
+    </main>
+
+</body>
+</html>
