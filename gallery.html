@@ -5,91 +5,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome | Academy</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Local -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!--local-->
     <link rel="stylesheet" href="styles/objects.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .chakra{
-            height: 200px;
+        .geeks {
+            overflow: hidden;
+            margin: 2rem auto;
+        }
 
+        .geeks img {
+            transition: 0.5s all ease-in-out;
+        }
+
+        .geeks:hover img {
+            transform: scale(1.5);
         }
     </style>
+
+
 </head>
-<body>
-    <div class="row px-3">
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ff9933;">
 
-            </div>
-        </div>   
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ff9933;">
+<body class="bg-svg">
+    <header>
+        <div class="custom-shape-divider-top-1600920463">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+            </svg>
+          </div>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        
+              <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                <h5 class="py-2 text-white">Main navbar</h5>
+              </div>
+        
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Courses </a>
+                  <ul class="dropdown-menu fade-up">
+                    <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 4 </a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 5 </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Careers </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Our Team </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </ul>
+                </li>
+              </ul>
+        
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+                <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Profile </a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div> <!-- navbar-collapse.// -->
+          </nav>
+    </header>
 
-            </div>
-        </div>   
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ff9933;">
+    <div class="row">
 
-            </div>
-        </div>   
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ff9933;">
+        <div class=" col-md-3">
 
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601677237215-c9a8f0747b0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
             </div>
-        </div>    
+
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601647819416-c642b99a2a62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601654144948-005ab1ee80d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+        </div>
+        <div class=" col-md-3">
+
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601658797866-7ae55d05a817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60x"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601643820695-06f8ed84c3ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601658797866-7ae55d05a817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60x"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+        </div>
+        <div class=" col-md-3">
+
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601648904883-4270e74277d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+        </div>
+        <div class=" col-md-3">
+
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601647819416-c642b99a2a62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601654144948-005ab1ee80d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601647819416-c642b99a2a62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+
+            <div class="geeks">
+                <img src="https://images.unsplash.com/photo-1601654144948-005ab1ee80d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    style="max-width:100%" alt="Geeks Image" />
+            </div>
+        </div>
+
     </div>
-    <div class="row px-3">
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ffffff;">
 
-            </div>
-        </div>   
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ffffff;">
 
-            </div>
-        </div> 
-        <div class="col">
-            <div class="card small-card small-card-rotated">
-                <img src="chakra.png" alt="" height=128px" width="128px" style="margin: auto;">
-            </div>
-        </div>   
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ffffff;">
-
-            </div>
-        </div>   
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #ffffff;">
-
-            </div>
-        </div>    
-    </div>
-    <div class="row px-3">
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #138808;">
-
-            </div>
-        </div>  
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #138808;">
-
-            </div>
-        </div>  
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color:#138808;">
-
-            </div>
-        </div>  
-        <div class="col">
-            <div class="card small-card small-card-rotated" style="background-color: #138808;">
-
-            </div>
-        </div>    
     </div>
 
+
+
+    
+  <div class="footer-bs">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card newsletter-card mx-auto">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Newsletter</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I have read T&C</label>
+              </div>
+
+              <button type="submit" class="btn newsletter-card-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-lg footer-ns animated fadeInRight">
+        <hr>
+        <h2>Logo</h2>
+        <hr>
+        <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur
+          vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+        <p>© 2014 BS3 UI Kit, All rights reserved</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col footer-social ">
+        <h4>Follow Us</h4>
+        <hr class="mx-5">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+      <div class="col footer-social ">
+        <h4>Follow Us</h4>
+        <hr class="mx-5">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul class="social-list">
+          <li class="social-list-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li class="social-list-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li class="social-list-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
 </body>
